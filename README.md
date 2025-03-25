@@ -1,7 +1,7 @@
-Project Overview: Loqui Chat Application
+# Project Overview: Loqui Chat Application
 
 Loqui is a simple, multi-client chat application that enables users to communicate in real-time over a network. The project consists of two main components: a client and a server. The server handles connections from multiple clients, manages messages, and broadcasts them to all connected users. The client sends messages to the server, listens for incoming messages, and displays them to the user.
-1. Server-Side (Server Script)
+# 1. Server-Side (Server Script)
 
 The server script handles the core operations of the chat application. It listens for incoming client connections, manages communication between multiple clients, and handles user actions such as joining or leaving the chat.
 Key Components:
@@ -38,7 +38,7 @@ Key Components:
 
         The server has robust error handling, particularly for connection issues, and it ensures that disconnected clients are properly removed from the active client list.
 
-2. Client-Side (Client Script)
+# 2. Client-Side (Client Script)
 
 The client script is responsible for interacting with the user and sending messages to the server. It also listens for incoming messages from other users and displays them in real-time.
 Key Components:
@@ -67,7 +67,7 @@ Key Components:
 
         The client has error handling to deal with failed message sending or receiving due to connection issues.
 
-How Loqui Works:
+# How Loqui Works:
 
     Server Initialization:
 
@@ -91,7 +91,7 @@ How Loqui Works:
 
         The server handles multiple clients simultaneously using threads. Each client runs in its own thread, allowing multiple clients to send and receive messages at the same time without blocking the server or other clients.
 
-Potential Future Enhancements:
+# Potential Future Enhancements:
 
     Private Messaging: Allow clients to send direct messages to other users, rather than broadcasting to all.
 
@@ -101,6 +101,6 @@ Potential Future Enhancements:
 
     Chat Rooms: Create chat rooms or channels where users can join specific groups based on interests.
 
-Conclusion:
+# Conclusion:
 
 Loqui is a simple yet functional multi-client chat application built using Python’s socket library and threading. The server handles client connections, broadcasts messages to all users, and ensures thread safety with locks. The client interacts with the user, sending messages to the server and displaying incoming messages in real-time. The application demonstrates essential concepts like network communication, multithreading, and basic error handling.
